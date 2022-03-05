@@ -9,22 +9,16 @@ package com.hui.java.foundational.syntax;
  */
 
 public class Comments {
-
     /**
      * 程序的入口
      * 程序main方法开始执行
+     *
      * @param args 参数
      */
 
     public static void main(String[] args) {
         //打印输出Hello World
         System.out.println("Hello World");
-
-
-
-        /*
-          块注释
-         */
 
     }
 }
