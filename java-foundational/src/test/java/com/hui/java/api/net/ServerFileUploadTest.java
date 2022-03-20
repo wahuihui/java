@@ -2,7 +2,6 @@ package com.hui.java.api.net;
 
 import org.testng.annotations.Test;
 
-import javax.net.ServerSocketFactory;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
