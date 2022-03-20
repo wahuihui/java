@@ -57,11 +57,11 @@ public class ServerSocketTest {
             int bufferLength = inputStream.read(buffer);
             System.out.println("服务器:客户端请求的数据内容是：" + new String(buffer, 0, bufferLength));
             //服务器给客户端响应数据
-            String requestData = "是的是的";
+            String responseData = "是的是的";
 
             OutputStream outputStream = socket.getOutputStream();
-            outputStream.write(requestData.getBytes());
-            System.out.println("服务器:服务器给客户端响应数据成功，响应的内容是："+requestData);
+            outputStream.write(responseData.getBytes());
+            System.out.println("服务器:服务器给客户端响应数据成功，响应的内容是："+responseData);
 
             socket.close();//生产环境不使用
         }
