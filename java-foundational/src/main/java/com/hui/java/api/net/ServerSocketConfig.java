@@ -10,7 +10,7 @@ package com.hui.java.api.net;
 
 public class ServerSocketConfig {
 
-    private Integer port = 6666;
+    private Integer port = 9999;
     private String ip = "192.168.137.1";
 
     public Integer getPort() {
