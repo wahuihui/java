@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--Schema约束的使用-->
+
+<!--xmlns="https://www.ittimeline.net"
+        xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.ittimeline.net order.xsd"-->
+<orders
+        xmlns="https://www.ittimeline.net"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.ittimeline.net  order.xsd"
+>
+    <order orderId="0001">
+        <id>10001</id>
+        <address>河南省郑州市</address>
+        <bookTime>2022-03-25T21:36:00</bookTime>
+        <amount>8888.88</amount>
+    </order>
+
+    <order orderId="0002">
+        <id>10002</id>
+        <address>河南省洛阳市</address>
+        <bookTime>2022-03-25T08:00:00</bookTime>
+        <amount>8888.88</amount>
+    </order>
+
+    <order orderId="0003">
+        <id>10003</id>
+        <address>河南省开封市</address>
+        <bookTime>2022-03-25T09:00:00</bookTime>
+        <amount>6666.66</amount>
+    </order>
+</orders>
