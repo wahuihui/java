@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 程序流程控制</title>
+</head>
+<body>
+
+<script>
+    //需求 在浏览器页面上打印表格型的99乘法表
+    document.write("<h1>99乘法表</h1>")
+    document.write("<table width='800px'>")
+    for (let i = 1; i <= 9; i++) {
+        document.write("<tr>")
+        for (let j = 1; j <= i; j++) {
+            document.write("<td>"+j+"*"+i+"="+(j*i)+"\t</td>")
+        }
+        document.write("</tr>")
+    }
+    document.write("</table>")
+</script>
+</body>
+</html>

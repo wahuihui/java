@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Dom 获取元素</title>
+</head>
+<body>
+
+<!--准备数据-->
+<div id="java">好好学习</div>
+<div class="javascript">天天向上</div>
+<span name="front" class="javascript">HTML</span>
+<span name="front" class="javascript">CSS</span>
+<span name="front" class="javascript">JavaScript</span>
+
+<script>
+    //根据id获取一个元素 返回Element
+    console.log("根据id获取一个元素 返回Element")
+    let elementById = document.getElementById("java");
+    console.log(elementById)
+
+    //根据class获取多个元素 返回Element类型的数组
+    console.log("根据class获取多个元素 返回Element类型的数组")
+    let javascriptClassElements = document.getElementsByClassName("javascript");
+    for (let i = 0; i < javascriptClassElements.length; i++) {
+        console.log(javascriptClassElements[i])
+    }
+
+    //根据标签获取多个元素 返回Element类型的数组
+    console.log("根据标签获取多个元素 返回Element类型的数组")
+    let spanTagElements = document.getElementsByTagName("span")
+    for (let i = 0; i < spanTagElements.length; i++) {
+        console.log(spanTagElements[i])
+    }
+
+    //获取单个元素
+    console.log("获取单个元素")
+    let querySelector = document.querySelector("#java");
+    console.log(querySelector)
+
+    //获取多个元素
+    console.log("获取多个元素")
+    let elementNodeListOf = document.querySelectorAll(".javascript");
+    for (let i = 0; i < elementNodeListOf.length; i++) {
+        console.log(elementNodeListOf[i])
+    }
+
+</script>
+
+
+</body>
+</html>

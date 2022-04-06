@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 案例 表单校验</title>
+</head>
+<body>
+<h1>JavaScript 案例 表单校验</h1>
+用户名：<input type="text" id="name" autocomplete="off" onblur="validationName()"/>
+<span style="color: red" id="nameValidationInfo"></span><br/>
+密&nbsp;&nbsp;码：<input type="password" id="password"/><br/>
+手机号：<input type="number" id="phoneNumber" autocomplete="off" onblur="validationPhoneNumber(this.value)"/>
+<span style="color: red" id="phoneNumberValidationInfo"></span><br/>
+
+<script>
+    /**
+     * 校验表单的用户名
+     * 校验规则 用户名的长度是5-16个字符，只能是英文和数字，并且以英文字母开头
+     */
+    function validationName(){
+        let regex = /^[a-zA-Z][a-zA-Z0-9]{4,15}$/
+        let nameElement = document.getElementById("name");
+        let nameValue = nameElement.value;
+        console.log("你输入的用户名是："+nameValue)
+        let spanElement = document.getElementById("nameValidationInfo");
+        if (regex.test(nameValue)){
+            spanElement.innerText="用户名验证通过"
+        }else {
+            spanElement.innerText="用户名不合法！"
+        }
+    }
+
+    /**
+     * 校验手机号
+     * 手机号的规则 1开头 第二位是3，5，7，8，9，一共11位
+     */
+    function validationPhoneNumber(phoneNumber){
+        console.log("用户输入的手机号是："+phoneNumber)
+        let regex = /^1[35789]\d{9}$/
+        let spanElement = document.getElementById("phoneNumberValidationInfo");
+        if (regex.test(phoneNumber)){
+            spanElement.innerText="手机号校验通过"
+        }else {
+            spanElement.innerText="手机号不合法，请输入正确的手机号"
+        }
+    }
+
+
+</script>
+
+</body>
+</html>

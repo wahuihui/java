@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript内置对象 日期</title>
+</head>
+<body>
+
+
+<script>
+    let date = new Date()
+    console.log("当前日期默认格式："+date)
+    console.log("当前日期格式化："+date.toLocaleDateString())
+    console.log("当前日期格式化："+date.toLocaleString())
+    console.log("当前日期格式化："+date.toLocaleTimeString())
+    console.log("当前日期格式化："+date.toLocaleString("zh-CN"))
+    console.log("当前日期格式化："+date.toLocaleString("zh-CN",{hour12:false}))
+    console.log("当前日期格式化："+date.toLocaleString("zh-CN",{hour12:true}))
+    console.log("当前日期格式化："+date.toLocaleString("zh-CN",{hour12:false,timeZone:"Asia/Shanghai"}))
+    console.log("当前日期格式化："+date.toLocaleString("zh-CN",{hour12:true,timeZone:"Asia/Shanghai"}))
+    console.log("当前日期格式化："+date.toLocaleString("zh-CN",{hour12:false,timeZone:"Asia/Shanghai",timeZoneName:""}))
+    console.log("当前日期格式化："+date.toLocaleString("zh-CN",{hour12:true,timeZone:"Asia/Shanghai",timeZoneName:""}))
+    console.log("当前日期格式化："+date.toLocaleString("zh-CN",{hour12:false,timeZone:"Asia/Shanghai",timeZoneName:"short"}))
+    console.log("当前日期格式化："+date.toLocaleString("zh-CN",{hour12:true,timeZone:"Asia/Shanghai",timeZoneName:"short"}))
+    console.log("当前日期格式化："+date.toLocaleString("zh-CN",{hour12:false,timeZone:"Asia/Shanghai",timeZoneName:"long"}))
+    console.log("当前日期格式化："+date.toLocaleString("zh-CN",{hour12:true,timeZone:"Asia/Shanghai",timeZoneName:"long"}))
+</script>
+</body>
+</html>
